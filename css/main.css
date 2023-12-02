@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iransans;
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../woff2/IRANSansX-Medium.woff2);
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 587px) {
+  .header {
+    display: none;
+  }
+  .saat {
+    display: none;
+  }
+  .clock {
+    display: none;
+  }
+  .container2 {
+    display: none;
+  }
+
+  .woman > img {
+    height: 420px;
+    position: absolute;
+    transform: translate(-10px, -30px);
+    transition: all 300ms linear;
+  }
+  .men > img {
+    height: 420px;
+    position: absolute;
+    transform: translate(-10px, -30px);
+    transition: all 300ms linear;
+  }
+  .men:hover > img {
+    transform: translate(0px, -30px);
+  }
+  .woman:hover > img {
+    transform: translate(0, -30px);
+  }
+}
+
+@media (max-width: 587px) and (min-width: 536px) {
+  .saat {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+
+  .woman > img {
+    height: 420px;
+    position: absolute;
+    transform: translate(0px, -30px);
+    transition: all 300ms linear;
+  }
+  .men > img {
+    height: 420px;
+    position: absolute;
+    transform: translate(0px, -30px);
+    transition: all 300ms linear;
+  }
+  .shop .pool {
+    font-size: 18px;
+  }
+  .shop > .sabad1 {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .mahsoulat .image2 {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 536px) and (min-width: 100px) {
+  .header {
+    display: none;
+  }
+
+  .search .text {
+    font-size: 13px;
+    width: 95%;
+  }
+
+  .search .imgsrch {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search .btn {
+    font-size: 13px;
+  }
+
+  .saat {
+    display: none;
+  }
+
+  .shop .pool {
+    font-size: 18px;
+  }
+  .shop > .sabad1 {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .mahsoulat .image2 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/*preeheader*/
+.sabt {
+  border: unset;
+  background-color: #6d1579;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.submeno {
+  width: 27vh;
+  background-color: #6d1579;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  z-index: 999;
+  display: none;
+}
+
+.submeno * a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+.close {
+  float: left;
+  padding: 15px;
+  background-color: #6d1579;
+  border: unset;
+  color: white;
+  font-size: x-large;
+}
+.hed1 {
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+.hed1 img {
+  width: 24px;
+  height: 24px;
+}
+.right {
+  align-items: center;
+  height: 60px;
+  align-content: center;
+  justify-content: center;
+}
+.hed3 {
+  background-color: white;
+  position: sticky;
+  top: 0%;
+  border-bottom: 1px groove #a9a5a5;
+
+  z-index: 999;
+}
+
+.right * img {
+  width: 24px;
+}
+
+.right * p {
+  color: #6d6666;
+  font-size: 12px;
+  font-weight: 10px;
+  cursor: pointer;
+}
+.right * p:hover {
+  color: rgb(122, 20, 122) !important ;
+}
+.left {
+  align-items: center;
+}
+.tamas {
+  padding-right: 15px;
+  border-right: groove 2px #a9a5a5;
+}
+.left * img {
+  width: 24px;
+}
+.left * a {
+  color: #6d6666;
+  font-size: 12px;
+  font-weight: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.left * a:hover {
+  color: rgb(122, 20, 122) !important ;
+}
+/*header*/
+
+.logo {
+  top: 60px;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+/*meno*/
+.meno1 {
+  position: sticky;
+  z-index: 998;
+  top: 60px;
+  background-color: white;
+}
+.li {
+  list-style: none;
+}
+.li > a {
+  text-decoration: none;
+  color: #6d6666;
+  font-size: 15px;
+}
+.li:hover a {
+  color: rgb(122, 20, 122) !important ;
+}
+/*search*/
+div.search {
+  width: 900px;
+  height: 60px;
+  background-color: #6d1579;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+}
+button.btn {
+  font-size: 20px;
+}
+.imgsrch {
+  width: 30px;
+  height: 30px;
+}
+
+.text {
+  width: 85%;
+  height: 60px;
+  border: 1px solid rgb(218, 210, 210);
+  border-radius: 0px 50px 50px 0px;
+  font-size: 22px;
+  color: #6d6666;
+}
+
+/*mahsoulat*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#image1 {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  transition: all 300ms linear;
+}
+div.thumbnail {
+  display: flex;
+
+  gap: 5px;
+}
+div.thumbnail > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+div.thumbnail2 {
+  display: flex;
+
+  gap: 5px;
+}
+.image2 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.sabad1 {
+  width: 170px;
+  height: 50px;
+
+  background-color: #6d1579;
+  border-radius: 50px;
+  border: unset;
+}
+.pool {
+  font-size: 25px;
+}
+.sabad2 {
+  width: 100px;
+  height: 35px;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid grey;
+  background-color: #f0f2f5;
+}
+.code1 {
+  border: unset;
+  border-radius: 50px;
+  background-color: #6d1579;
+  color: white;
+  padding: 5px 10px;
+}
+.jam {
+  cursor: pointer;
+  font-size: large;
+  margin-bottom: 0;
+}
+.add {
+  font-size: large;
+  margin-bottom: 0;
+}
+.kam {
+  cursor: pointer;
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+.pardakht > img {
+  width: 80px;
+}
+
+/*slidermahsoulat*/
+.kar {
+  width: 300px;
+  position: relative;
+  box-shadow: 3px 3px 3px #8c2877;
+}
+.kar > p {
+  color: #8c2877;
+}
+.kar > img {
+  width: 300px;
+  cursor: pointer;
+  transition: all 300ms linear;
+  scale: 0.8;
+}
+.ptext {
+  color: #8c2877;
+}
+.zirnevis {
+  background-color: #8c2877;
+}
+.codezir {
+  border: unset;
+  border-radius: 50px;
+  background-color: #f0f2f5;
+}
+.kar > img:hover {
+  scale: 1;
+}
+.shop5 {
+  background-color: #a03589;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  transition: all 700ms linear;
+}
+.kar:hover > .shop5 {
+  opacity: 1;
+}
+
+/*qr-foroter*/
+
+.qrcode {
+  background-color: #f0f2f5;
+}
+
+.enamad {
+  cursor: pointer;
+}
+.watch {
+  position: relative;
+}
+.clock {
+  position: absolute;
+
+  left: 50%;
+  margin-top: -190px;
+  transform: translateX(-50%);
+}
+.box {
+  background-color: #9955a2;
+}
+.foroter1 {
+  color: white;
+}
+.foroter2 {
+  color: #800080;
+  font-size: 12px;
+}
+.phone1 {
+  width: 35px;
+  height: 35px;
+}
+.phone2 {
+  width: 30px;
+  height: 30px;
+}
+.container2 img {
+  animation: updown 3s ease infinite;
+  width: 100px;
+  position: absolute;
+  margin-top: -50px;
+  right: 15%;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
