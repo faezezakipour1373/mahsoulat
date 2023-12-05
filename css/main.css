@@ -122,6 +122,19 @@
     height: 180px;
   }
 }
+#top{
+  width: 40px;
+  height: 40px;
+  background-color: #6d1579;
+  border-radius: 50% ;
+position: fixed;
+top: 86%;
+right: 8%;
+z-index: 999;
+padding-right: 11px;
+padding-top: 5px;
+cursor: pointer;
+}
 
 /*preeheader*/
 .sabt {
